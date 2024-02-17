@@ -4,56 +4,106 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Blog Template</title>
 </head>
 <body>
-    <div>
+    <div id="home">
         <header>
             <nav>
-                <p><span>Front-</span>End</p>
+                <p><a href="index.html">Front-<span>End</span></a></p>
                 <!-- Step 1.1: Create an Unordered List for Navigation -->
                 <!-- Step 1.2: Inside the Unordered List, put the items Home, Blog, Popular, and Contact for Navigation-->
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#popular">Popular</a></li>
+                    <li><a href="#contact">Contacts</a></li>
+                </ul>
             </nav>
             <section>
                 <!-- Step 2.1: Create a div for the container of the introductory part -->
                 <!-- Step 2.2: Inside the div, create a heading for the title of the blog. "Front-end" -->
                 <!-- Step 2.3: Inside the div, create a paragraph for the description. You can put this as the paragraph: Dive into the world of web development, as this resource sets you on the path to becoming a web design virtuoso!-->
+                <div class="content">
+                    <img src="images/hehe.png" alt="">
+                    <h2 class="text"><span>Front-</span>End</h2>
+                    <p class="text">
+                        Dive into the world of web development, as this resource sets you on the path to becoming a web design virtuoso!
+                    </p>
+                </div>
             </section>
         </header>
 
-        <main>
-            <div> <!-- Created a div to contain the "blog" -->
-                <article> <!-- Created an article element for "posts" to group the individual blog posts -->
-                    <div> <!-- Created individual divs for the  "post" -->
-                        <div> <!-- Inside each post div, create a div for the "post-image" -->
+        <main class="main-content">
+            <div id="blog" class="blog"> <!-- Created a div to contain the "blog" -->
+                <h2>BLOGS</h2>
+                <article class="posts"> <!-- Created an article element for "posts" to group the individual blog posts -->
+                    <div class="post"> <!-- Created individual divs for the  "post" -->
+                        <div class="post-image"> <!-- Inside each post div, create a div for the "post-image" -->
                             <img src="images/img1.avif" alt="Unveiling the Blueprint of the Web Image"> <!-- Created an img element with the appropriate src and alt attributes for the post image -->
                         </div>
                     
-                        <div> <!-- Inside each post div is a "post-content" to contain the post title, info, and summary -->
+                        <div class="post-content"> <!-- Inside each post div is a "post-content" to contain the post title, info, and summary -->
                         
-                            <a>Unveiling the Blueprint - Mastering HTML Document Structure</a> <!-- Inside the post-content div is a created anchor tag for the "post-title" -->
+                            <div class="overlap-wrapper">
+                                <a class="post-title">Unveiling the Blueprint - Mastering HTML Document Structure</a>
+                            </div> <!-- Inside the post-content div is a created anchor tag for the "post-title" -->
                         
-                            <p>Posted on November 13, 2023 by AWSCC-DSWD</p> <!-- Inside the post-content div is a created paragraph for the "post-info" -->
-                        
-                            <p> <!-- Inside the post-content div is a created paragraph for the  "post-summary" --> Imagine you're about to embark on a journey to build your dream house. What's the first thing you need? A solid blueprint, right? Well, welcome to the world of web development, where your canvas is a blank web page, and your blueprint is the HTML document structure.
-                            </p>
+                            <div class="details">
+                                <p class="post-info">Posted on November 13, 2023 by AWSCC-DSWD</p> <!-- Inside the post-content div is a created paragraph for the "post-info" -->
+                                <p class="post-summary"> <!-- Inside the post-content div is a created paragraph for the  "post-summary" -->
+                                    Imagine you're about to embark on a journey to build your dream house. What's the first thing you need? A solid blueprint, right? Well, welcome to the world of web development, where your canvas is a blank web page, and your blueprint is the HTML document structure.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 
                     <!-- Step 4.1: Using the instructions above, create 2 more blog post with the details:  -->
 
-                    <div> <!-- Include the following in this div for post: images/img2.jpeg, Mastering the Art: Creating Interactive Web Experiences, Posted on November 12, 2023 by AWSCC-DSWD, Explore the art of creating contact forms, surveys, and more. Understand how to collect user data, validate inputs, and enhance the user experience. From simple text inputs to radio buttons and dropdown menus, we'll cover it all in this exciting journey into web forms.  -->
+                    <div class="post"> <!-- Include the following in this div for post: images/img2.jpeg, Mastering the Art: Creating Interactive Web Experiences, Posted on November 12, 2023 by AWSCC-DSWD, Explore the art of creating contact forms, surveys, and more. Understand how to collect user data, validate inputs, and enhance the user experience. From simple text inputs to radio buttons and dropdown menus, we'll cover it all in this exciting journey into web forms.  -->
+                        <div class="post-image">
+                            <img src="images/img2.jpeg" alt="">
+                        </div>
+                        <div class="post-content">
+                            <div class="overlap-wrapper">
+                                <a class="post-title">Mastering the Art: Creating Interactive Web Experiences</a>
+                            </div>
+                            <div class="details">
+                                <p class="post-info">Posted on November 12, 2023 by AWSCC-DSWD</p>
+                                <p class="post-summary">
+                                    Explore the art of creating contact forms, surveys, and more. Understand how to collect user data, validate inputs, and enhance the user experience. From simple text inputs to radio buttons and dropdown menus, we'll cover it all in this exciting journey into web forms.
+                                </p>
+                            </div>
+                        </div>
                     </div>
 
-                    <div > <!-- Include the following in this div for post: images/img3.jpeg, Revolutionize Web Design: Crafting Dynamic Layouts, Posted on November 11, 2023 by AWSCC-DSWD, Unlock the magic of CSS Flexbox and transform your web layout! Say goodbye to the days of complex grids and welcome the simplicity and flexibility of Flexbox. Learn how to create responsive and dynamic layouts that adapt effortlessly to different screen sizes. -->
+                    <div class="post"> <!-- Include the following in this div for post: images/img3.jpeg, Revolutionize Web Design: Crafting Dynamic Layouts, Posted on November 11, 2023 by AWSCC-DSWD, Unlock the magic of CSS Flexbox and transform your web layout! Say goodbye to the days of complex grids and welcome the simplicity and flexibility of Flexbox. Learn how to create responsive and dynamic layouts that adapt effortlessly to different screen sizes. -->
+                        <div class="post-image">
+                            <img src="images/img3.jpeg" alt="">
+                        </div>
+                        <div class="post-content">
+                            <div class="overlap-wrapper">
+                                <a class="post-title">Revolutionize Web Design: Crafting Dynamic Layouts</a>
+                            </div>
+                            <div class="details">
+                                <p class="post-info">Posted on November 11, 2023 by AWSCC-DSWD</p>
+                                <p class="post-summary">
+                                    Unlock the magic of CSS Flexbox and transform your web layout! Say goodbye to the days of complex grids and welcome the simplicity and flexibility of Flexbox. Learn how to create responsive and dynamic layouts that adapt effortlessly to different screen sizes.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </article>
             </div>
 
             
-            <aside> <!-- Inside the main is a semantic element for "sidebar" -->
+            <div id="popular" class="p-blogs"> <!-- Inside the main is a semantic element for "sidebar" -->
                 <!-- Step 5: Inside the aside section, create two divs, one for popular-posts, and one for social-side -->
+                
                 <div> <!-- div for "popular-posts-side" -->
+                    <hr class="divider">
+                    <h2>POPULAR POSTS</h2>
                     <!-- Create a subheading:  POPULAR POSTS -->
                     <!-- Under this subheading, create another div for "popular-posts", this will put all of the popular posts div into one div-->
                     <!-- Inside the popular posts div, create a div for the "popular-post" -->
@@ -63,29 +113,84 @@
                     <!-- Inside the popular post content div, create a paragraph for the "popular-post-desc": I am going to show you the top 9 interesting HTML... -->    
 
                     <!-- Using the instructions above, create 3 more popular posts with the details:  -->
-
-                    <div> <!-- div for "popular-post" -->
-                    <!-- Inside this div, include the following: images/posts/post2.png, Unleash the Potential of Lists, HTML lists are a powerful tool for organizing...  -->
-                    </div>
-
-                    <div> <!-- div for "popular-post"-->
-                    <!-- Inside this div, include the following: images/posts/post3.webp, Master HTML in 24 Mins, Learn HTML & CSS right from the basics...  -->
-                    </div>
-
-                    <div> <!-- div for "popular-post" -->
-                        <!-- Inside this div, include the following: images/posts/post4.png, The state of a checkbox, I was in the middle of creating a small web...  -->
+                    <div class="p-contain">
+                        <div class="popular-post">
+                            <div class="popular-post-image">
+                                <img src="images/posts/post1.jpg" alt="">
+                            </div>
+                            <div class="popular-post-content">
+                                <a class="popular-post-title">Interesting HTML tags</a>
+                                <p class="popular-post-desc">I am going to show you the top 9 interesting HTML...</p>
+                            </div>
                         </div>
-                </div>
 
-                <div> <!-- div for "social-side" -->
-                    <!-- create a subheading:  FOLLOW US -->
-                    <!-- under this subheading, create another div for social media links, this will put all of the social media links into one div-->
-                    <!-- Inside the social media links div, add the picture from the folder of socials and create an anchor tag for the Facebook link: https://www.facebook.com/ -->
-                    <!-- Inside the social media links div, add the picture from the folder of socials and create an anchor tag for the Twitter link: https://twitter.com/ -->
-                    <!-- Inside the social media links div, add the picture from the folder of socials and create an anchor tag for the Instagram link: https://www.instagram.com/ -->
-                    <!-- Inside the social media links div, add the picture from the folder of socials and create an anchor tag for the LinkedIn link: https://www.linkedin.com/ -->
+                        <div class="popular-post"> <!-- div for "popular-post" -->
+                        <!-- Inside this div, include the following: images/posts/post2.png, Unleash the Potential of Lists, HTML lists are a powerful tool for organizing...  -->
+                            <div class="popular-post-image">
+                                <img src="images/posts/post2.png" alt="">
+                            </div>
+                            <div class="popular-post-content ">
+                                <a class="popular-post-title">Unleash the Potential of Lists</a>
+                                <p class="popular-post-desc">HTML lists are a powerful tool for organizing...</p>
+                            </div>
+                        </div>
+    
+                        <div class="popular-post"> <!-- div for "popular-post"-->
+                        <!-- Inside this div, include the following: images/posts/post3.webp, Master HTML in 24 Mins, Learn HTML & CSS right from the basics...  -->
+                            <div class="popular-post-image">
+                                <img src="images/posts/post3.webp" alt="">
+                            </div>
+                            <div class="popular-post-content">
+                                <a class="popular-post-title">Master HTML in 24 Mins</a>
+                                <p class="popular-post-desc">Learn HTML & CSS right from the basics...</p>
+                            </div>
+                        </div>
+    
+                        <div class="popular-post"> <!-- div for "popular-post" -->
+                            <!-- Inside this div, include the following: images/posts/post4.png, The state of a checkbox, I was in the middle of creating a small web...  -->
+                            <div class="popular-post-image">
+                                <img src="images/posts/post4.png" alt="">
+                            </div>
+                            <div class="popular-post-content">
+                                <a class="popular-post-title">The state of a checkbox</a>
+                                <p class="popular-post-desc">I was in the middle of creating a small web...</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </aside>
+            </div>
+
+            <div id="contact"class="social-side"> <!-- div for "social-side" -->
+                <!-- create a subheading:  FOLLOW US -->
+                <!-- under this subheading, c reate another div for social media links, this will put all of the social media links into one div-->
+                <!-- Inside the social media links div, add the picture from the folder of socials and create an anchor tag for the Facebook link: https://www.facebook.com/ -->
+                <!-- Inside the social media links div, add the picture from the folder of socials and create an anchor tag for the Twitter link: https://twitter.com/ -->
+                <!-- Inside the social media links div, add the picture from the folder of socials and create an anchor tag for the Instagram link: https://www.instagram.com/ -->
+                <!-- Inside the social media links div, add the picture from the folder of socials and create an anchor tag for the LinkedIn link: https://www.linkedin.com/ -->
+                <hr class="divider">
+                <h2>FOLLOW US</h2>
+                <div class="social-links">
+                    <div>
+                        <a href="https://www.facebook.com/happyreshh/" target="_blank">
+                            <img src="images/social/facebook.png" alt="Facebook Icon"></a>
+                    </div>
+
+                    <div>
+                        <a href="https://twitter.com/home" target="_blank"> 
+                            <img src="images/social/twitter.png" alt="Twitter Icon"></a>
+                    </div>
+
+                    <div>
+                        <a href="https://www.pinterest.ph/happyresh/" target="_blank">
+                        <img src="images/social/pinterest.png" alt="Instagram Icon">></a>
+                    </div>
+
+                    <div>
+                        <a href="https://www.linkedin.com/in/recio-eliniel-932521291/" target="_blank">
+                            <img src="images/social/linkedin.png" alt="LinkedIn Icon">></a>
+                    </div>
+                </div>
+            </div>
         </main>
 
         <footer>
@@ -94,11 +199,35 @@
             <!-- Inside the footerBox div, create an h3:  Privacy Policy -->
             <!-- Add an hr for a line -->
             <!-- Inside the footerBox div, create a paragraph:  We are committed to protecting your privacy. We will only use the information we collect about you lawfully (in accordance with the Data Protection Act 1998). Please read on if you wish to learn more about our privacy policy. --> 
-
             <!-- Using the instructions above, create 2 more footer boxes with the details: Terms of Service - Our Service allows you to post, link, store, share, and otherwise make available certain information, text, graphics, videos, or other material. You are responsible for the Content posted on the Service.
                 Help & Support - If you have any questions or need assistance, our support team is here to help. Contact us via email or visit our help center for answers to frequently asked questions. -->
-            <hr> <!-- Add an hr for a line "splitter"-->
-            <p>2023 Blog Structure</p> <!-- Add a paragraph for the "copy-right" -->
+            <div class="footerBoxes">
+                <div class="footerBox">
+                    <h3>Privacy Policy</h3>
+                    <hr>
+                    <p>
+                        We are committed to protecting your privacy. We will only use the information we collect about you lawfully (in accordance with the Data Protection Act 1998). Please read on if you wish to learn more about our privacy policy.
+                    </p>
+                </div>
+
+                <div class="footerBox">
+                    <h3>Terms of Service</h3>
+                    <hr>
+                    <p>
+                        Our Service allows you to post, link, store, share, and otherwise make available certain information, text, graphics, videos, or other material. You are responsible for the Content posted on the Service.
+                    </p>
+                </div>
+
+                <div class="footerBox">
+                    <h3>Help & Support</h3>
+                    <hr>
+                    <p>
+                        If you have any questions or need assistance, our support team is here to help. Contact us via email or visit our help center for answers to frequently asked questions.
+                    </p>
+                </div>
+            </div>
+            <hr class="foot-hr"> <!-- Add an hr for a line "splitter"-->
+            <p class="copy-right">2023 Blog Structure</p> <!-- Add a paragraph for the "copy-right" -->
         </footer>
     </div>
 </body>
