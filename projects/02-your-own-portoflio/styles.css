@@ -1,0 +1,636 @@
+/* Typography */
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.google.com/share?selection.family=Sometype+Mono:ital,wght@0,400;0,500;1,400');
+   html {font-family:'Share Tech Mono', 'Times New Roman', Times, serif;}
+
+/* Global Styling */
+:root {
+    --primary: #c05621;  /* Deeper orange for primary color */
+    --secondary: #f69988; /* Muted coral for secondary color */
+    --accent: #4b6584;   /* Slate blue for accent color */
+    --neutral: #212529;  /* Keeping the gray for a solid base */
+  }
+
+/* Reset and Normalize */
+*,
+*::after,
+*::before { 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+html {
+    font-size: 80%;
+    scroll-behavior: smooth;
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+  
+body {
+    height: auto;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    background-color: #eee;
+    overflow-x: visible;
+    margin: 0;
+    background-image: linear-gradient(to left top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);}
+
+img, picture {
+    max-width: 100%;
+}
+
+article, aside, footer, header, nav, section {
+	display: hehe;
+}
+
+#home{
+    display: -ms-flexbox;
+    flex-direction: column;
+}
+
+/* Navigation Styling */
+
+/* Step 1: Navigation Bar Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 0 100px;
+    height: 60px;
+    position: fixed;
+    text-transform: uppercase;
+    color: #845EC2#4B4453#B0A8B9;
+    width: 100%;
+    z-index: 5;
+    background: linear-gradient();
+    box-shadow: 10px 5px 5px 0px rgba(0, 0, 0, 0.184);
+}
+
+/* Step 2: Navigation Text Styles */
+nav p {
+    font-size: 30px;
+    cursor: auto;
+    transition: none;
+    font-weight: 500;
+}
+
+nav a{
+ color: black;   
+}
+
+/* Step 3: Navigation Span Styles */
+nav p span {
+    color: black;
+}
+
+/* Step 4: Navigation List Styles */
+nav ul {
+    display: inline-flex;
+    gap: 25px;
+    font-size: 20px;
+    z-index: 1;
+}
+
+/* Step 5: Navigation List Item Styles */
+nav ul li {
+    border: none;
+    cursor: pointer;
+}
+
+/* Step 6: Navigation List Item Hover Styles */
+nav ul li:hover {
+    transition: margin-right 2s ease-in-out .5s;
+    color: whitesmoke;
+}
+
+/* Step 7: Navigation List Item Anchor Styles */
+nav ul li a {
+    color: black;
+}
+
+/* Step 8: Navigation List Item Anchor Hover Styles */
+nav ul li:hover > a {
+    color: whitesmoke;
+}
+
+/* Step 9: Responsive Styles for Navigation */
+@media only screen and (max-width: 880px) {
+    nav {
+        padding: 0 15px;
+    }
+}
+
+/* Step 10: Responsive Styles for Hidden Navigation on Small Screens */
+@media only screen and (max-width: 700px) {
+    nav ul {
+        display: none;
+    }
+}
+
+/* Slider Section Styling */
+
+/* Step 2: Content Styles */
+.content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 105px 75px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.content img{
+    height: 28vw;
+    width: 70%;
+    position: absolute;
+    left: 40%;
+    top: 20%;
+}
+
+/* Step 3: Heading Styles */
+.text{
+    text-align: left;
+    color: black;
+    width: 100%;
+    z-index: 1;
+}
+
+.content h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 3000;
+}
+
+.content span {
+    color: black;
+}
+
+/* Step 4: Paragraph Styles */
+.content p {
+    font-size: 30px;
+    max-width: 500px;
+    color: black;
+    margin-top: -auto;
+}
+
+/* Step 5: Responsive Styles */
+@media only screen and (max-width: 1080px) {
+    .content h2 {
+        font-size: 40px;
+    }
+    
+    .content p {
+        font-size: 20px;
+        max-width: 400px;
+    }
+
+    .content img{
+        top: 30%
+    }
+}
+
+@media only screen and (max-width: 945px) {
+    .content h2 {
+        font-size: 30px;
+    }
+    
+    .content p {
+        font-size: 16px;
+        max-width: 400px;
+    }
+}
+
+@media only screen and (max-width: 785px) {
+    .content h2 {
+        font-size: 40px;
+    }
+    
+    .content p {
+        font-size: 15px;
+        max-width: 200px;
+    }
+
+    .content img{
+        height: 50vw;
+    }
+}
+
+@media only screen and (max-width: 685px) {
+    .content h2 {
+        font-size: 30px;
+    }
+    
+    .content p {
+        display: none;
+    }
+
+    .content{
+        height: 25em;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .content h2 {
+        font-size: 25px;
+    }
+
+    .content{
+        padding: 10px
+    }
+    
+    .content p {
+        display: none;
+    }
+
+    .content{
+        height: 20em;
+    }
+}
+
+/* Main Content Section Styling */
+
+/* Step 1: Main Content Container Styles */
+.main-content {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient()
+}
+
+/* Step 2: Blog Section Styles */
+.blog{
+    height: auto;
+    width: 100%;
+    padding: 25px 75px;
+    padding-bottom: 100px;
+    position: relative;
+    overflow: hidden;
+}
+
+.blog .posts {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    position: relative;
+}
+
+.blog h2{
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* Step 4: Post Styles */
+.post {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+/* Step 5: Post Image Styles */
+.post-image {
+    height: 477px;
+    width: 100%;
+}
+
+/* Step 6: Hover Effect on Post Image */
+.post:hover {
+    transform: scale(1.1);
+    transition: all 0.5 ease-in;
+    cursor: pointer;
+}
+
+/* Step 7: Post Image Inner Styles */
+.post-image img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+/* Step 8: Post Content Styles */
+
+.overlap-wrapper{
+    position: absolute;
+    transition: all 0.2s ease;
+    width: 100%;
+    height: 477px;
+    left: 0;
+    background: linear-gradient(180deg, rgba(9, 211, 211, 0.211) 0%, rgba(211, 211, 211, 0.682) 70.31%);top: 0;
+    padding: 55px;
+    padding-top: 200px;
+    overflow: hidden;
+}
+
+.overlap-wrapper:hover{
+    opacity: 2;
+    transition: 0.5 ease-in;
+}
+
+/* Step 9: Post Title Styles */
+.post-title {
+    font-size: 30px;
+    cursor: pointer;
+    color: black;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.details{
+    text-align: left;
+    border-top: 1px solid black;
+    padding: 10px 15px;
+    margin-top: 30px;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* Step 10: Post Info Styles */
+.post-info {
+    padding: 10px 0;
+    font-weight: bolder;
+}
+
+/* Step 11: Post Summary Styles */
+.post-summary {
+    padding-top: 15px;
+    line-height: 25px;
+}
+
+/* Step 12: Responsive Styles */
+@media only screen and (max-width: 1250px) {    
+    .post-image, .overlap-wrapper {
+        height: 377px;
+    }
+
+    .post-title{
+        font-size: 25px;
+    }
+    
+}
+
+@media only screen and (max-width: 1024px) {
+    .blog .posts {
+        grid-template-columns: repeat(1, 2fr);
+
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .blog h2{
+        font-size: 30px;
+    }
+    .post-title{
+        font-size: 15px;
+    }
+
+    .overlap-wrapper{
+        padding-top: 100px;
+    }
+
+    .post-image, .overlap-wrapper {
+        height: 277px;
+    }
+}
+
+/* Popular Space */
+
+/* Step 1: Sidebar Container Styles */
+.p-blogs {
+    padding: 25px 75px;
+    position: relative;
+    color: var(--yellow);
+    width: 100%;
+    height: auto;
+    padding: 25px 75px;
+    padding-bottom: 8em;
+}
+
+.p-blogs .p-contain {
+    width: 100%;
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5em 15em;
+    overflow: hidden;
+    
+}
+
+.divider{
+    border: 1px solid var(--gray);
+    opacity: 0.4;
+    margin-bottom: 25px;
+}
+
+.p-blogs h2{
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 25px;
+    color: var(--gray);
+    text-align: center;
+}
+
+.popular-post{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.popular-post-content{
+    position: absolute;
+    transition: all 0.2s ease;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    padding: 100px 50px;
+    overflow: hidden;
+    
+}
+
+/* Step 5: Popular Post Hover Styles */
+.popular-post:hover {
+    transform: scale(1.1);
+    transition: all 0.5 ease-in;
+    cursor: pointer;
+}
+
+.popular-post-content:hover{
+    opacity: 0.9;
+}
+
+/* Step 6: Popular Post Image Styles */
+.popular-post-image {
+    width: 100%;
+    height: 300px;
+}
+
+/* Step 7: Popular Post Image Hover Styles */
+.popular-post-image img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+/* Step 8: Popular Post Title Styles */
+.popular-post-title {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+/* Step 9: Popular Post Description Styles */
+.popular-post-desc {
+    line-height: 25px;
+    font-size: 15px;
+}
+
+/* Step 10: Responsive Styles for Popular Posts Container */
+
+@media only screen and (max-width: 1250px) {
+    .popular-post-title {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .p-blogs .p-contain {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .p-blogs h2{
+        font-size: 30px;
+    }
+
+    .popular-post-title {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .popular-post-desc{
+        font-size: 10px;
+    }
+}
+
+/* Step 11: Social Side Container Styles */
+.social-side {
+    height: auto;
+    width: 100%;
+    padding: 25px 75px;
+    
+}
+
+.social-side h2{
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* Step 12: Social Side Box Styles */
+.social-links {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 20px
+}
+
+.social-links div img{
+    width: 100px;
+    height: 100px;
+}
+
+/* Step 14: Social Side Link Hover Styles */
+.social-links div img:hover {
+    box-shadow: 0px 5px 5px var(--gray);
+    transition: all 0.5 ease-in;
+    cursor: pointer;
+}
+
+/* Step 15: Footer Splitter Styles */
+@media only screen and (max-width: 515px) {
+    .social-links div img{
+        width: 80px;
+        height: 80px;
+    }
+
+    .social-links{
+        flex-wrap: wrap;
+        
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .social-side h2{
+        font-size: 30px;
+    }
+}
+
+/* Footer Styling */
+
+/* Step 1: Footer Container Styles */
+footer {
+    color: var(--yellow);
+    padding: 25px 75px;
+}
+
+/* Step 2: Footer Boxes Container Styles */
+footer .footerBoxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+footer hr{
+    margin: 15px 0;
+    opacity: 0.5;
+    border: none;
+    height: 1px;
+    color: var(--white); 
+    background-color: var(--white);
+}
+
+.copy-right {
+    text-align: center;
+}
+
+.foot-hr{
+    margin-block-end: 30px;
+}
+
+/* Step 3: Responsive Styles for Footer Boxes Container */
+@media only screen and (max-width: 480px) {
+    footer .footerBoxes {
+        flex-wrap: wrap;
+    }
+}
