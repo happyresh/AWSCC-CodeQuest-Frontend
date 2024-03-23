@@ -1,5 +1,8 @@
 /* Typography */
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.google.com/share?selection.family=Sometype+Mono:ital,wght@0,400;0,500;1,400');
+   html {font-family:'Share Tech Mono', 'Times New Roman', Times, serif;}
 
 /* Global Styling */
 :root {
@@ -9,6 +12,7 @@
     --neutral: #212529;  /* Keeping the gray for a solid base */
   }
 
+/* Reset and Normalize */
 *,
 *::after,
 *::before { 
